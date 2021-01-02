@@ -15,18 +15,11 @@ function fish_prompt -d "Prints left prompt"
 
     if command git rev-parse --git-dir > /dev/null 2>/dev/null
         if ! command git diff --cached --no-ext-diff --quiet --exit-code 2>/dev/null
-            set glyph_color (set_color green)
+            set glyph_color (set_color white)
         else if command git rev-parse --verify --quiet refs/stash > /dev/null 2>/dev/null
-            set glyph_color (set_color yellow)
+            set glyph_color (set_color brred)
         end
     end
 
-    printf " $pwd_color$pwd $glyph_color$glyph "
+    printf "$pwd_color$pwd $glyph_color$glyph "
 end
-
-alias l='exa'
-alias ls='exa'
-alias l.='exa -d .*'
-alias la='exa -a'
-alias ll='exa -Fhl'
-alias ll.='exa -Fhl -d .*'
