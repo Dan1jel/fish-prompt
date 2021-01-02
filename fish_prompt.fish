@@ -3,7 +3,7 @@ function fish_prompt -d "Prints left prompt"
     set -l glyph        "\$"
     set -l glyph_color  (set_color normal)
     set -l pwd          (prompt_pwd)
-    set -l pwd_color    (set_color blue)
+    set -l pwd_color    (set_color brblack)
 
     if test (id -u "$USER") -eq 0
         set glyph "#"
@@ -21,5 +21,12 @@ function fish_prompt -d "Prints left prompt"
         end
     end
 
-    printf "$pwd_color$pwd $glyph_color$glyph "
+    printf " $pwd_color$pwd $glyph_color$glyph "
 end
+
+alias l='exa'
+alias ls='exa'
+alias l.='exa -d .*'
+alias la='exa -a'
+alias ll='exa -Fhl'
+alias ll.='exa -Fhl -d .*'
