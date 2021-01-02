@@ -44,6 +44,6 @@ function fish_right_prompt -d "Prints right prompt"
             set git_changed_files (set_color yellow)"$git_modified_files changed "
         end
 
-        printf "$git_changed_files$git_color$branch_name$git_symbol"
+        echo "$git_changed_files$git_color$branch_name$git_symbol"
     end
 end
