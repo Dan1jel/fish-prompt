@@ -41,7 +41,7 @@ function fish_right_prompt -d "Prints right prompt"
         end
 
         if test "$git_modified_files" -gt 0
-            set git_changed_files (set_color -o brred)"$git_modified_files changed "
+            set git_changed_files (set_color -o brred)"($git_modified_files ) "
         end
 
         echo "$git_changed_files$git_color$branch_name$git_symbol"
