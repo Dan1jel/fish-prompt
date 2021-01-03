@@ -1,6 +1,6 @@
 # fish-prompt
 
-My version of arbourd minimalist fish prompt. 
+My version of [arbourd](https://github.com/arbourd/prompt) minimalist fish prompt. 
 
 A minimal prompt for fish-shell (not my photo, will update when I have one)
 
