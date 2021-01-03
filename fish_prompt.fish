@@ -24,7 +24,7 @@ function fish_prompt -d "Prints left prompt"
     printf " $pwd_color$pwd $glyph_color$glyph "
 end
 
-### if exa is installed, use exa instead ###
+## Replace 'ls' with 'exa' (if available) + some aliases.
 
         if which exa >/dev/null;
 
@@ -36,5 +36,12 @@ end
             alias ll.='exa -Fhl -d .*'
 
 	else
+
+            alias l='ls -G'
+            alias ls='ls -G'
+            alias l.='ls -d .*'
+            alias la='ls -a'
+            alias ll='ls -Fhl'
+	    alias ll.='ls -Fhl -d .*'
     
 end
