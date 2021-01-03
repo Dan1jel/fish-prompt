@@ -36,6 +36,5 @@ end
             alias ll.='exa -Fhl -d .*'
 
 	else
-
-    fi
+    
 end
