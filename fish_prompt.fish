@@ -28,13 +28,14 @@ end
 
         if which exa >/dev/null;
 
-        alias l='exa'
-        alias ls='exa'
-        alias l.='exa -d .*'
-        alias la='exa -a'
-        alias ll='exa -Fhl'
-        alias ll.='exa -Fhl -d .*'
-    else
+            alias l='exa'
+            alias ls='exa'
+            alias l.='exa -d .*'
+            alias la='exa -a'
+            alias ll='exa -Fhl'
+            alias ll.='exa -Fhl -d .*'
+
+	else
 
     fi
 end
