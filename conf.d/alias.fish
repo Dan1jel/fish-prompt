@@ -1,3 +1,5 @@
+#!/bin/fish
+
 ## Replace 'ls' with 'exa' (if available) + some aliases.
 
         if which exa >/dev/null;
