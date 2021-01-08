@@ -4,9 +4,9 @@
 
         if which exa >/dev/null;
             alias l='exa'
-            alias ls='exa'
+            alias ls='exa -a'
             alias l.='exa -d .*'
-            alias la='exa -a'
+            alias la='exa -la'
             alias ll='exa -Fhl'
             alias ll.='exa -Fhl -d .*'
 	else

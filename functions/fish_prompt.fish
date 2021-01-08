@@ -23,25 +23,3 @@ function fish_prompt -d "Prints left prompt"
 
     printf " $pwd_color$pwd $glyph_color$glyph "
 end
-
-## Replace 'ls' with 'exa' (if available) + some aliases.
-
-        if which exa >/dev/null;
-
-            alias l='exa'
-            alias ls='exa'
-            alias l.='exa -d .*'
-            alias la='exa -a'
-            alias ll='exa -Fhl'
-            alias ll.='exa -Fhl -d .*'
-
-	else
-
-            alias l='ls -G'
-            alias ls='ls -G'
-            alias l.='ls -d .*'
-            alias la='ls -a'
-            alias ll='ls -Fhl'
-	    alias ll.='ls -Fhl -d .*'
-    
-end
