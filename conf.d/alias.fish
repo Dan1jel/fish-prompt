@@ -19,7 +19,7 @@
 	end
 
 	# Run backup scrupt if needed
-	    alias backup='sh ~/.termux/tasker/rclone_tasker.sh'
+	    alias backup='bash ~/.termux/tasker/rclone_tasker.sh'
 
 	# Easier navigation: .., ..., ...., ....., ~ and -
 	    alias ..="cd .."
