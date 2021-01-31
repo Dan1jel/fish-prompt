@@ -18,7 +18,7 @@
 	    alias ll.='ls -Fhl -d .*'
 	end
 
-	# Run backup scrupt if needed
+	# Run backup script if needed
 	    alias backup='bash ~/.termux/tasker/rclone_tasker.sh'
 
 	# Easier navigation: .., ..., ...., ....., ~ and -
