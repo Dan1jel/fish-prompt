@@ -33,7 +33,7 @@
 	    alias week='date +%V'
 
 	# Reload the shell (i.e. invoke as a login shell)
-	    alias reload='exec $SHELL -l'
+	    alias reload='clear && exec $SHELL -l'
 
 	# Find a command in grep history
 	    alias gh='history|grep'
@@ -54,3 +54,9 @@ alias tn='tmux new-session'
 
 # Lists all ongoing sessions
 alias tl='tmux list-sessions'
+
+#bitcoin in sek shortcut
+alias btcs='curl sek.rate.sx/0.00229537btc'
+
+#btc shorgcut
+alias btc='curl rate.sx/btc'
