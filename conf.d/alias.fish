@@ -70,5 +70,8 @@
 	# Raspberry Shortcut 
 	    alias pi='ssh pi'
 
+	# Display work log
+	    alias work='tail ~/storage/downloads/termux/work_time.txt'
+
 	# Instaloader shurtcut add {SHORT_URL} in the end
 	    alias insta-url='instaloader --login=Dan1jel --no-captions --no-metadata-json --no-video-thumbnails --dirname-pattern=/data/data/com.termux/files/home/storage/downloads/termux/instaloader/{profile} --'
