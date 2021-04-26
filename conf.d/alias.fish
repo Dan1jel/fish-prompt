@@ -75,3 +75,6 @@
 
 	# Instaloader shurtcut add {SHORT_URL} in the end
 	    alias insta-url='instaloader --login=Dan1jel --no-captions --no-metadata-json --no-video-thumbnails --dirname-pattern=/data/data/com.termux/files/home/storage/downloads/termux/instaloader/{profile} --'
+
+	# Shortcut to update all pip applications.
+	    alias pip-upgrade='pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U'
