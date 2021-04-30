@@ -62,7 +62,7 @@
             alias ta='tmux attach -t'
 
         # Creates a new session
-            alias tn='tmux new-session'
+            alias tn='tmux new-session -t'
 
         # Lists all ongoing sessions
             alias tl='tmux list-sessions'
@@ -78,3 +78,6 @@
 
 	# Shortcut to update all pip applications.
 	    alias pip-upgrade='pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U'
+
+	# show media information
+	    alias ffprobe='ffprobe -hide_banner'
