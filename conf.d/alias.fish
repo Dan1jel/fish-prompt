@@ -35,7 +35,7 @@
 
 	# Reload the shell (i.e. invoke as a login shell)
 
-	    alias reload='exec fish'
+	    alias reload='clear && exec fish'
 
 	# Find a command in grep history
 	    alias gh='history|grep'
