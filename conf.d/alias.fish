@@ -48,7 +48,9 @@
 	
 	# Bitcoin alias
 	    alias btc='curl rate.sx/btc'
-	    alias btcs='curl -s sek.rate.sx/0.00229537btc | cut -d '.' -f 1'
+	   #alias btcs='curl -s sek.rate.sx/0.00229537btc | cut -d '.' -f 1'
+	   #alias btcs='/bin/btcs.sh'
+	    alias btcs='~/./termux-backup/good_scripts/btcs.sh'
 
 	# Freshly clean termina with neofetch
 	    alias start1="neofetch | lolcat && bash -c 'curl wttr.in/sollentuna?format=3'"
