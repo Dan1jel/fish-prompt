@@ -53,7 +53,7 @@
 	    alias btcs='~/./termux-backup/good_scripts/btcs.sh'
 
 	# Freshly clean termina with neofetch
-	    alias start1="neofetch | lolcat && bash -c 'curl wttr.in/sollentuna?format=3'"
+	    alias start1='~/./termux-backup/good_scripts/start1.sh'
 
 # Some tmux-related shell aliases
 
