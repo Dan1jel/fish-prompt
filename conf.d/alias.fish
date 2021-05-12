@@ -69,6 +69,9 @@
         # Lists all ongoing sessions
             alias tl='tmux list-sessions'
 
+	# Script to load Tmux-panes
+	    alias load-tmux='~/./termux-backup/good_scripts/tmux.sh'
+
 	# Raspberry Shortcut 
 	    alias pi='ssh pi'
 
