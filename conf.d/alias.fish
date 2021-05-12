@@ -86,3 +86,6 @@
 
 	# show media information
 	    alias ffprobe='ffprobe -hide_banner'
+
+	# show media information nr.2
+	    alias media='~/./termux-backup/good_scripts/media.sh'
