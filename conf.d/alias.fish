@@ -89,3 +89,6 @@
 
 	# show media information nr.2
 	    alias media='~/./termux-backup/good_scripts/media.sh'
+
+	# Replace find with fdfind
+	    alias find='fdfind'
