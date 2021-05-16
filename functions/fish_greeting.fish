@@ -2,7 +2,7 @@
 function fish_greeting -d "What's up, fish?"
     clear
     set_color $fish_color_autosuggestion
-    iuname -nmsr
+    uname -nmsr
 
     # TODO: `command -q -s` only works on fish 2.5+, so hold off on that for now
     command -s uptime >/dev/null
