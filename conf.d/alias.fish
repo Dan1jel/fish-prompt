@@ -90,5 +90,10 @@
 	# show media information nr.2
 	    alias media='~/./termux-backup/good_scripts/media.sh'
 
-	# Replace find with fdfind
+	# Replace find with fdfind (fd on termux)
+
+        if which fdfind >/dev/null;
 	    alias find='fdfind'
+	else
+            alias find='fd'
+	end
