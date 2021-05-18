@@ -90,5 +90,18 @@
 	# show media information nr.2
 	    alias media='~/./termux-backup/good_scripts/media.sh'
 
-	# Replace find with fdfind
+	# Replace find with fdfind (fd on termux)
+
+        if which fdfind >/dev/null;
 	    alias find='fdfind'
+	else
+            alias find='fd'
+	end
+
+	# Show stats about device
+
+	if which macchina >/dev/null;
+	    alias stats="macchina --no-ascii --no-box -b -P 2 -t hydrogen -c green -s 2 -X Battery DesktopEnvironment Distribution Host Kernel LocalIP Machine Memory OperatingSystem Packages Processor ProcessorUsage Shell Terminal Uptime WindowManager"
+	else
+	    alias stats='neofetch'
+	end
