@@ -52,7 +52,7 @@
 	   #alias btcs='/bin/btcs.sh'
 	    alias btcs='~/./termux-backup/good_scripts/btcs.sh'
 
-	# Freshly clean termina with stats
+	# Freshly clean terminal with stats
 	    alias stats='~/./termux-backup/good_scripts/stats.sh'
 
 # Some tmux-related shell aliases
@@ -97,3 +97,6 @@
 	else
             alias find='fd'
 	end
+	
+	# Clear terminal
+	    alias clear='~/./termux-backup/good_scripts/clear.sh'
