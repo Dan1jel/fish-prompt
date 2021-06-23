@@ -101,5 +101,5 @@
 	# Clear terminal
 	    alias clear='~/./termux-backup/good_scripts/clear.sh'
 
-	# Check Active Torrents in Transmission
-	    alias transmission="transmission-remote -n Dan1jel:Paras1t3 -l"
+	# List all torrents in Transmission
+	    alias t-list="transmission-remote -n 'transmission:transmission' -l"
