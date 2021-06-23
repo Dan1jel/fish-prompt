@@ -103,3 +103,10 @@
 
 	# List all torrents in Transmission
 	    alias t-list="transmission-remote -n 'transmission:transmission' -l"
+
+	# Add torrent file
+	    alias t-add="transmission-remote -n 'transmission:transmission' -a"
+
+	# Remove specific torrent (please use torrent ID)
+	    alias t-remove='transmission-remote -t ${@:1} -rad'
+
