@@ -107,6 +107,8 @@
 	# Add torrent file
 	    alias t-add="transmission-remote -n 'transmission:transmission' -a"
 
-	# Remove specific torrent (please use torrent ID)
-	    alias t-remove='transmission-remote -t ${@:1} -rad'
+	# Check torrent stats
+	    alias t-stats='transmission-remote -n 'transmission:transmission' -st && echo'
 
+	# Torrent overal stats/conf
+	    alias t-conf='transmission-remote -n 'transmission:transmission' -si && echo'
