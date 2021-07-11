@@ -95,7 +95,7 @@
         if which fdfind >/dev/null;
 	    alias find='fdfind'
 	else
-            alias find='fd'
+           alias find='fd'
 	end
 	
 	# Clear terminal
