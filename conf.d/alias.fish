@@ -102,16 +102,16 @@
 	    alias clear='~/./termux-backup/good_scripts/clear.sh'
 
 	# List all torrents in Transmission
-	    alias t-list="transmission-remote -n 'transmission:transmission' -l"
+	    alias t-list="transmission-remote -n 'Dan1jel:Paras1t3' -l"
 
 	# Add torrent file
-	    alias t-add="transmission-remote -n 'transmission:transmission' -a"
+	    alias t-add="transmission-remote -n 'Dan1jel:Paras1t3' -a"
 
 	# Check torrent stats
-	    alias t-stats='transmission-remote -n 'transmission:transmission' -st && echo'
+	    alias t-stats='transmission-remote -n 'Dan1jel:Paras1t3' -st && echo'
 
 	# Torrent overal stats/conf
-	    alias t-conf='transmission-remote -n 'transmission:transmission' -si && echo'
+	    alias t-conf='transmission-remote -n 'Dan1jel:Paras1t3' -si && echo'
 
 	#full backup script
 	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
