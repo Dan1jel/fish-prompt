@@ -112,3 +112,6 @@
 
 	# Torrent overal stats/conf
 	    alias t-conf='transmission-remote -n 'transmission:transmission' -si && echo'
+
+	#full backup script
+	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
