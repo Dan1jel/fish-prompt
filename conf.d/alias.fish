@@ -22,9 +22,9 @@
 	# use bat instead of cat
 
         if which bat >/dev/null;
-	    alias cat='bat $1'
+	    alias cat='bat --style=plain'
 	else
-            alias cat='cat $1'
+            alias cat='cat'
 	end
 
 	# Replace find with fdfind (fd on termux)
