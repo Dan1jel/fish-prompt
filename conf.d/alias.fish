@@ -1,6 +1,6 @@
 #!/bin/fish
 
-## Replace 'ls' with 'exa' (if available) + some aliases.
+	# Replace 'ls' with 'exa' (if available) + some aliases.
 
         if which exa >/dev/null;
 	    alias l='exa'
@@ -17,6 +17,22 @@
             alias la='ls -a'
             alias ll='ls -Fhl'
 	    alias ll.='ls -Fhl -d .*'
+	end
+
+	# use bat instead of cat
+
+        if which bat >/dev/null;
+	    alias cat='bat $1'
+	else
+            alias cat='cat $1'
+	end
+
+	# Replace find with fdfind (fd on termux)
+
+        if which fdfind >/dev/null;
+	    alias find='fdfind'
+	else
+            alias find='fd'
 	end
 
 	# Run backup scrupt if needed
@@ -90,14 +106,6 @@
 	# show media information nr.2
 	    alias media='~/./termux-backup/good_scripts/media.sh'
 
-	# Replace find with fdfind (fd on termux)
-
-        if which fdfind >/dev/null;
-	    alias find='fdfind'
-	else
-           alias find='fd'
-	end
-	
 	# Clear terminal
 	    alias clear='~/./termux-backup/good_scripts/clear.sh'
 
