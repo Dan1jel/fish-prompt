@@ -5,3 +5,5 @@ end
 function find
 	fdfind $argv
 end
+
+PATH=$PATH:/home/pi/.local/bin
