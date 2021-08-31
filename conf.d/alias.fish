@@ -125,13 +125,13 @@
 	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
 
 	# Hardencode subs with embeded subs within mkv.
-	   # alias hardsub-mkv='~/termux-backup/good_scripts/./hardsub-mkv.sh'
+	    alias hardsub-mkv='~/termux-backup/good_scripts/./hardsub-mkv.sh'
 
 	# Hardencode subs with .ass files and .mp4.
 	    alias hardsub-ass='~/termux-backup/good_scripts/./hardsub-ass.sh'
 	    
 	# Hardencode subs with embeded subs within mkv.
-	    alias hardsub-mkv='(for i in *.mkv; do ffmpeg -i "$i" -filter_complex "subtitles='$i':si=0" -c:a copy "$i%.*.mp4"; done)'
+	    #alias hardsub-mkv='for i in *.mkv; do ffmpeg -i "$i" -filter_complex "subtitles='$i':si=0" -c:a copy "$i%.*.mp4"; done'
 
  	# Hardencode subs with .ass files and .mp4.
 	    #alias hardsub-ass='for i in *.mp4; do ffmpeg -i "$i" -filter_complex "subtitles='$i%.*.ass'" -c:a copy "$i%.*.v2.mp4"; done'
