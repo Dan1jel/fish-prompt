@@ -13,5 +13,5 @@ function ac3
 end
 
 function hardsub
-	ffmpeg -i $argv[1] -c:a copy -vf subtitles="$argv[1]":si=0 /server/media/'out.mp4'
+	ffmpeg -i $argv[1] -c:a copy -vf subtitles='$argv[1]:si=0' /server/media/'out.mp4'
 end

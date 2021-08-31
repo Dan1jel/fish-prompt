@@ -121,5 +121,11 @@
 	# Torrent overal stats/conf
 	    alias t-conf='transmission-remote -n 'Dan1jel:Paras1t3' -si && echo'
 
-	#full backup script
+	# full backup script
 	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
+
+	# Hardencode subs with embeded subs within mkv.
+	    alias hardsub-mkv='~/.dotfiles/scripts/./hardsub-mkv.sh'
+
+	# Hardencode subs with .ass files and .mp4.
+	    alias hardsub-ass='~/.dotfiles/scripts/./hardsub-ass.sh'
