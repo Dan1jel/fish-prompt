@@ -129,3 +129,9 @@
 
 	# Hardencode subs with .ass files and .mp4.
 	    alias hardsub-ass='~/.dotfiles/scripts/./hardsub-ass.sh'
+	    
+	# Hardencode subs with embeded subs within mkv.
+	    #alias hardsub-mkv='for i in *.mkv; do ffmpeg -i "$i" -filter_complex "subtitles='$i':si=0" -c:a copy "$i%.*.mp4"; done'
+
+ 	# Hardencode subs with .ass files and .mp4.
+	    #alias hardsub-ass='for i in *.mp4; do ffmpeg -i "$i" -filter_complex "subtitles='$i%.*.ass'" -c:a copy "$i%.*.v2.mp4"; done'
