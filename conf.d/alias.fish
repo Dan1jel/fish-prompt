@@ -127,7 +127,6 @@
 	# Hardencode subs with embeded subs within mkv.
 	    alias hardsub='~/termux-backup/good_scripts/./hardsub.bash'
 
-
 	# Hardencode subs with embeded subs within mkv.
 	    alias hardsub-mkv='~/termux-backup/good_scripts/./hardsub-mkv_all.bash'
 
