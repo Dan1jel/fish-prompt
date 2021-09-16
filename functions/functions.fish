@@ -1,7 +1,11 @@
 fish_add_path -P ~/.local/bin/
 
 function t-remove
-	transmission-remote -t $argv -r
+	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -r
+end
+
+function t-remove-all
+	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -rad
 end
 
 function find
