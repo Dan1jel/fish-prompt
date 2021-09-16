@@ -124,6 +124,9 @@
 	# full backup script
 	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
 
+	# Pipe-screensaver
+	    alias pipe-saver='pipes.sh -f20 -p2'
+
 	# Hardencode subs with embeded subs within mkv.
 	    alias hardsub='~/termux-backup/good_scripts/./hardsub.bash'
 
