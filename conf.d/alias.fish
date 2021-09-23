@@ -139,6 +139,9 @@
 	# Hardencode subs with .srt files and .mp4.
 	    alias hardsub-srt='~/termux-backup/good_scripts/./hardsub-srt_all.bash'
 
+	# Hardencode subs with .srt files and .mp4.
+	    alias hardsub-srt2='~/termux-backup/good_scripts/./hardsub-srt_all.v2.bash'
+
 	# Hardencode subs with .ass files and .mp4.
 	    alias hardsub-10bit='~/termux-backup/good_scripts/./hardsub-10bit_all.bash'
    
