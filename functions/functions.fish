@@ -8,6 +8,14 @@ function t-remove-all
 	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -rad
 end
 
+function t-start
+	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -s
+end
+
+function t-stop
+	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -S
+end
+
 function find
 	fdfind $argv
 end
