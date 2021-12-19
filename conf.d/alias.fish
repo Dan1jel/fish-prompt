@@ -91,6 +91,9 @@
 	# Raspberry Shortcut 
 	    alias pi='ssh pi'
 
+	# Raspberry Shortcut 
+	    alias zero='ssh zero'
+
 	# Display work log
 	    alias work='tail ~/storage/downloads/termux/work_time.txt'
 
