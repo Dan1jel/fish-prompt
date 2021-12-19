@@ -21,7 +21,13 @@ function find
 end
 
 function ac3
-	ffmpeg -i $argv[1] -map 0:v -map 0:a:0 -map 0:s -c copy -c:a ac3 -b:a 640k $argv[2]
+	#ffmpeg -i $argv[1] -map 0:v -map 0:a:0 -map 0:s -c copy -c:a ac3 -b:a 640k $argv[2]
+	ffmpeg -i $argv[1] -map 0:v -map 0:a:0 -c copy -c:a ac3 -b:a 640k $argv[2]
+
+end
+
+function ntfy
+	curl -H "t: Remote Terminal" -d "You'r command just finnished." ntfy.sh/bejkon
 end
 
 # function hardsub
