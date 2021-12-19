@@ -1,0 +1,1 @@
+/data/data/com.termux/files/home/fish-prompt/conf.d/
