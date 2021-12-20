@@ -147,6 +147,9 @@
 
 	# Hardencode subs with .ass files and .mp4.
 	    alias hardsub-10bit='~/termux-backup/good_scripts/./hardsub-10bit_all.bash'
+
+	# ntfy.sh alias to run script
+	    alias ntfy='~/fish-prompt/script/ntfy.sh'
    
 	# Hardencode subs with embeded subs within mkv.
 	    #alias hardsub-mkv='for i in *.mkv; do ffmpeg -i "$i" -filter_complex "subtitles='$i':si=0" -c:a copy "$i%.*.mp4"; done'

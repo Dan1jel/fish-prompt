@@ -26,10 +26,6 @@ function ac3
 
 end
 
-function ntfy
-	curl -H "t: Remote Terminal" -d "You'r command just finnished." ntfy.sh/bejkon
-end
-
 # function hardsub
 #   set input_filename $argv[1]
 #   set output_filename (echo $input | sed 's/\.[^.]*$//')
