@@ -127,6 +127,9 @@
 	# full backup script
 	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
 
+	# Termux setup script
+	    alias setup='~/termux-backup/setup.sh'
+
 	# Pipe-screensaver
 	    alias pipe-saver='pipes.sh -f20 -p2'
 
