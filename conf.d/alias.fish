@@ -89,10 +89,10 @@
 	    alias load-tmux='~/./termux-backup/good_scripts/tmux.sh'
 
 	# Raspberry Shortcut 
-	    alias pi='ssh pi'
+	    alias pi='ssh -p4404 pi@bejkon.duckdns.org'
 
-	# Raspberry Shortcut 
-	    alias zero='ssh zero'
+	#  Raspberry Shortcut 
+	    alias zero='ssh -p4405 pi@bejkon.duckdns.org'
 
 	# Display work log
 	    alias work='tail ~/storage/downloads/termux/work_time.txt'
