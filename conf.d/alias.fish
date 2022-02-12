@@ -2,7 +2,8 @@
 
 	# Replace 'ls' with 'exa' (if available) + some aliases.
 
-        if which exa >/dev/null;
+        #if which exa >/dev/null;
+	if command -v exa
 	    alias l='exa'
             alias ls='exa -a'
             alias l.='exa -d .*'
@@ -21,7 +22,8 @@
 
 	# use bat instead of cat
 
-        if which bat >/dev/null;
+#      #if which bat >/dev/null;
+	if command -v bat
 	    alias cat='bat --style=plain'
 	else
             alias cat='cat'
@@ -29,10 +31,11 @@
 
 	# Replace find with fdfind (fd on termux)
 
-        if which fdfind >/dev/null;
-	    alias find='fdfind'
+#       if which fdfind >/dev/null;
+	if command -v fd
+	    alias find='fd'
 	else
-            alias find='fd'
+            alias find='fdfind'
 	end
 
 	# Run backup scrupt if needed
