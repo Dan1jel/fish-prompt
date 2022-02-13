@@ -22,7 +22,12 @@ function ac3
 	end
 
 function stats 
-	cat ~/termux-backup/ascii_art/ascii_$argv[1]
+	 #if command -a stats
+	 if count $argv > /dev/null
+	  cat ~/termux-backup/ascii_art/ascii_$argv
+	 else
+	  cat ~/termux-backup/ascii_art/ascii_br
+	 end
 	end
 
 function cat 		# use bat instead of cat
