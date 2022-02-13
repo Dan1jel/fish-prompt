@@ -37,6 +37,8 @@ end
 function find 		# Replace find with fdfind (fd on termux)
 	if command -q fd
 	  command fd $argv
+	else if command -q fdfind
+	  command fdfind $argv
 	else
 	  command find $argv
 	end
