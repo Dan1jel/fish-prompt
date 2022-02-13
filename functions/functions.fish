@@ -21,12 +21,13 @@ function ac3
 	ffmpeg -i $argv[1] -map 0:v -map 0:a:0 -c copy -c:a ac3 -b:a 640k $argv[2]
 	end
 
-function stats 
+function ascii 
 	 #if command -a stats
 	 if count $argv > /dev/null
 	  cat ~/termux-backup/ascii_art/ascii_$argv
 	 else
-	  cat ~/termux-backup/ascii_art/ascii_br
+	  cat (random choice ~/termux-backup/ascii_art/ascii_**)
+	  #cat ~/termux-backup/ascii_art/ascii_br
 	 end
 	end
 
