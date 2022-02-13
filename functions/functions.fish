@@ -25,8 +25,71 @@ function stats
 	cat ~/termux-backup/ascii_art/ascii_$argv[1]
 end
 
-# function hardsub
-#   set input_filename $argv[1]
-#   set output_filename (echo $input | sed 's/\.[^.]*$//')
-#   ffmpeg -i "$input_filename" -filter_complex "subtitles='$input_filename':si=0" -c:a copy "$output_filename".mp4
-# end
+  # use bat instead of cat
+function cat 		# use bat instead of cat
+	if command -v bat
+	  command bat --style=plain $argv
+	else
+	  command cat $argv
+	end
+end
+
+function find 		# Replace find with fdfind (fd on termux)
+	if command -v fd
+	  command fd $argv
+	else
+	  command find $argv
+	end
+end
+
+function l		# Replace 'ls' with 'exa' (if available) + some aliases.
+	if command -q exa
+	  command exa $argv
+	else
+	  command ls -G $argv
+	end
+end
+
+function ls
+        if command -q exa
+	  command exa -a $argv
+	else
+	  command ls -G $argv
+	end
+end
+
+function l. 
+	if command -q exa 
+	  command exa -d .* $argv
+	else
+	  command ls -d .* $argv
+	end
+end
+
+function la 
+	if command -q exa 
+	  command exa -la $argv
+	else
+	  command ls -a $argv
+	end
+end
+
+function ll
+	if command -q exa 
+	  command exa -Fhl $argv
+	else
+	  command ls -Fhl $argv
+	end
+end
+
+function ll.
+	if command -q exa 
+	  command exa -Fhl -d .* $argv
+	else
+	  command ls -Fhl -d .* $argv
+	end
+end
+
+function tree
+	command exa --tree $argv
+end

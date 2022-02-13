@@ -1,43 +1,5 @@
 #!/bin/fish
 
-	# Replace 'ls' with 'exa' (if available) + some aliases.
-
-        #if which exa >/dev/null;
-	if command -v exa
-	    alias l='exa'
-            alias ls='exa -a'
-            alias l.='exa -d .*'
-            alias la='exa -la'
-            alias ll='exa -Fhl'
-            alias ll.='exa -Fhl -d .*'
-	    alias tree='exa --tree'
-	else
-            alias l='ls -G'
-            alias ls='ls -G'
-            alias l.='ls -d .*'
-            alias la='ls -a'
-            alias ll='ls -Fhl'
-	    alias ll.='ls -Fhl -d .*'
-	end
-
-	# use bat instead of cat
-
-#      #if which bat >/dev/null;
-	if command -v bat
-	    alias cat='bat --style=plain'
-	else
-            alias cat='cat'
-	end
-
-	# Replace find with fdfind (fd on termux)
-
-#       if which fdfind >/dev/null;
-	if command -v fd
-	    alias find='fd'
-	else
-            alias find='fdfind'
-	end
-
 	# Run backup scrupt if needed
 	    alias backup='bash ~/.termux/tasker/rclone_tasker.sh'
 
