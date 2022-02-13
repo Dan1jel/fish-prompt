@@ -27,7 +27,7 @@ end
 
   # use bat instead of cat
 function cat 		# use bat instead of cat
-	if command -v bat
+	if command -q bat
 	  command bat --style=plain $argv
 	else
 	  command cat $argv
@@ -35,7 +35,7 @@ function cat 		# use bat instead of cat
 end
 
 function find 		# Replace find with fdfind (fd on termux)
-	if command -v fd
+	if command -q fd
 	  command fd $argv
 	else
 	  command find $argv
