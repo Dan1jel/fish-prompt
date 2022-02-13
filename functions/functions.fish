@@ -22,12 +22,14 @@ function ac3
 	end
 
 function ascii 
-	 #if command -a stats
 	 if count $argv > /dev/null
+	  clear
 	  cat ~/termux-backup/ascii_art/ascii_$argv
+	  echo
 	 else
+	  clear
 	  cat (random choice ~/termux-backup/ascii_art/ascii_**)
-	  #cat ~/termux-backup/ascii_art/ascii_br
+	  echo
 	 end
 	end
 
