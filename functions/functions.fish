@@ -1,4 +1,4 @@
-fish_add_path -P ~/.local/bin/
+#fish_add_path -P ~/.local/bin/
 
 function t-remove
 	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -r
