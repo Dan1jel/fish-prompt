@@ -119,6 +119,9 @@
 	# ntfy.sh alias to run script
 	    alias ntfy='~/fish-prompt/script/ntfy.sh'
    
+	# git shortcut
+	    alias git_all="git add --all && git commit -m 'update files' && git push"
+
 	# Hardencode subs with embeded subs within mkv.
 	    #alias hardsub-mkv='for i in *.mkv; do ffmpeg -i "$i" -filter_complex "subtitles='$i':si=0" -c:a copy "$i%.*.mp4"; done'
 
