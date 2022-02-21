@@ -11,11 +11,19 @@
 	    alias .....="cd ../../../.."
 	    alias ......="cd ../../../../.."
 
+	# mkdir creates all parants folder
+	    alias mkdir='mkdir -pv'
+
+	# Confirmations
+	    alias mv='mv -i'
+	    alias cp='cp -i'
+	    alias rm='rm -i'
+	    alias ln='ln -i'
+
 	# Get week number
 	    alias week='date +%V'
 
 	# Reload the shell (i.e. invoke as a login shell)
-
 	    alias reload='exec fish'
 
 	# Find a command in grep history
