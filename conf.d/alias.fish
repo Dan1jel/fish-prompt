@@ -64,8 +64,11 @@
 	# Raspberry Shortcut 
 	    alias pi='ssh -p4404 pi@bejkon.duckdns.org'
 
-	#  Raspberry Shortcut 
+	# Raspberry Shortcut 
 	    alias zero='ssh -p4405 pi@bejkon2.duckdns.org'
+
+	# Raspberry Shortcut 
+	    alias lulu='ssh -p4406 danijel@bejkonlulu.duckdns.org'
 
 	# Display work log
 	    alias work='tail ~/storage/downloads/termux/work_time.txt'
