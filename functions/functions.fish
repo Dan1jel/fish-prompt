@@ -36,7 +36,9 @@ function ascii
 function cat 		# use bat instead of cat
 	 if command -q bat
 	  command bat --style=plain $argv
-	 else
+	else if command -q batcat
+	  command batcat --style=plain $argv
+	else
 	  command cat $argv
 	 end
 	end

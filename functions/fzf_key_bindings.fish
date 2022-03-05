@@ -1,1 +1,1 @@
-/data/data/com.termux/files/home/.fzf/shell/key-bindings.fish
+/home/danijel/.fzf/shell/key-bindings.fish
