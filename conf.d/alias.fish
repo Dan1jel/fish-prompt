@@ -67,7 +67,7 @@
 	# Raspberry Shortcut 
 	    alias zero='ssh -p4405 pi@bejkon2.duckdns.org'
 
-	# Raspberry Shortcut 
+	# Chromebook laptop Shortcut 
 	    alias lulu='ssh -p4406 danijel@bejkonlulu.duckdns.org'
 
 	# Display work log
