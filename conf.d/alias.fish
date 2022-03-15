@@ -133,6 +133,9 @@
 	# git shortcut
 	    alias git_all="git add --all && git commit -m 'update files' && git push"
 
+	# fzf preview
+	    alias fzf-pre="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+
 	# Hardencode subs with embeded subs within mkv.
 	    #alias hardsub-mkv='for i in *.mkv; do ffmpeg -i "$i" -filter_complex "subtitles='$i':si=0" -c:a copy "$i%.*.mp4"; done'
 
