@@ -20,6 +20,6 @@ else if command -q fdfind
     set -Ux FZF_CTRL_T_COMMAND 'fdfind --type f --type d --hidden --follow --exclude .git'
 end
 
-set -Ux FZF_ALT_C_OPTS="--preview 'exa --tree --color=always {}' --preview-window right:50%:hidden:wrap --bind '?:toggle-preview'"
+set -Ux FZF_ALT_C_OPTS "--preview 'exa --tree --color=always {}' --preview-window right:50%:hidden:wrap --bind '?:toggle-preview'"
 
 set -Ux FZF_CTRL_R_OPTS "--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
