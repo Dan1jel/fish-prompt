@@ -113,35 +113,8 @@
 	# Pipe-screensaver
 	    alias pipe-saver='pipes.sh -f20 -p2'
 
-	# Hardencode subs with embeded subs within mkv.
-	    alias hardsub='~/termux-backup/good_scripts/./hardsub.bash'
-
-	# Hardencode subs with embeded subs within mkv.
-	    alias hardsub-mkv='~/termux-backup/good_scripts/./hardsub-mkv_all.bash'
-
-	# Hardencode subs with .ass files and .mp4.
-	    alias hardsub-ass='~/termux-backup/good_scripts/./hardsub-ass_all.bash'
-
-	# Hardencode subs with .srt files and .mp4.
-	    alias hardsub-srt='~/termux-backup/good_scripts/./hardsub-srt_all.bash'
-
-	# Hardencode subs with .srt files and .mp4.
-	    alias hardsub-srt2='~/termux-backup/good_scripts/./hardsub-srt_all.v2.bash'
-
-	# Hardencode subs with .ass files and .mp4.
-	    alias hardsub-10bit='~/termux-backup/good_scripts/./hardsub-10bit_all.bash'
-
 	# ntfy.sh alias to run script
 	    alias ntfy='~/fish-prompt/script/ntfy.sh'
    
 	# git shortcut
 	    alias git_all="git add --all && git commit -m 'update files' && git push"
-
-	# fzf preview
-	    alias fzfp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
-
-	# Hardencode subs with embeded subs within mkv.
-	    #alias hardsub-mkv='for i in *.mkv; do ffmpeg -i "$i" -filter_complex "subtitles='$i':si=0" -c:a copy "$i%.*.mp4"; done'
-
- 	# Hardencode subs with .ass files and .mp4.
-	    #alias hardsub-ass='for i in *.mp4; do ffmpeg -i "$i" -filter_complex "subtitles='$i%.*.ass'" -c:a copy "$i%.*.v2.mp4"; done'

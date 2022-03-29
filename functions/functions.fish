@@ -55,7 +55,7 @@ function find 		# Replace find with fdfind (fd on termux)
 
 function l		# Replace 'ls' with 'exa' (if available) + some aliases.
 	 if command -q exa
-	  command exa $argv
+	  command exa --icons --color=always $argv
 	 else
 	  command ls -G $argv
 	 end
@@ -63,7 +63,7 @@ function l		# Replace 'ls' with 'exa' (if available) + some aliases.
 
 function ls
          if command -q exa
-	  command exa -a $argv
+	  command exa -a --icons --color=always $argv
 	 else
 	  command ls -G $argv
 	 end
@@ -71,7 +71,7 @@ function ls
 
 function l. 
 	 if command -q exa 
-	  command exa -d .* $argv
+	  command exa --icons --color=always -d .* $argv
 	 else
 	  command ls -d .* $argv
 	 end
@@ -79,7 +79,7 @@ function l.
 
 function la 
 	 if command -q exa 
-	  command exa -la $argv
+	  command exa -la --icons --color=always $argv
 	 else
 	  command ls -a $argv
 	 end
@@ -87,7 +87,7 @@ function la
 
 function ll
 	 if command -q exa 
-	  command exa -Fhl $argv
+	  command exa -Fhl --icons --color=always $argv
 	 else
 	  command ls -Fhl $argv
 	 end
