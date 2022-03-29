@@ -53,7 +53,8 @@
             alias ta='tmux attach -t'
 
         # Creates a new session
-            alias tn='tmux new-session -t'
+            #alias tn='tmux new-session -t'
+	    alias tn='tmux new -s'
 
         # Lists all ongoing sessions
             alias tl='tmux list-sessions'
