@@ -59,6 +59,9 @@
         # Lists all ongoing sessions
             alias tl='tmux list-sessions'
 
+	# Kill tmux session by name ex. 'tk test'
+	    alias tk='tmux kill-session -t'
+
 	# Script to load Tmux-panes
 	    alias load-tmux='~/./termux-backup/good_scripts/tmux.sh'
 
