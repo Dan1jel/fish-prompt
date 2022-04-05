@@ -1,19 +1,19 @@
 #fish_add_path -P ~/.local/bin/
 
 function t-remove
-	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -r
+	transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -t $argv -r
 	end
 
 function t-remove-all
-	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -rad
+	transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -t $argv -rad
 	end
 
 function t-start
-	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -s
+	transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -t $argv -s
 	end
 
 function t-stop
-	transmission-remote -n 'Dan1jel:Paras1t3' -t $argv -S
+	transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -t $argv -S
 	end
 
 function ac3
