@@ -111,7 +111,7 @@
 	    alias setup='~/termux-backup/setup.sh'
 
 	# Pipe-screensaver
-	    alias pipe-saver='pipes.sh -f20 -p2'
+	    alias pipe-saver='pipes.sh -t2 -f20 -p2'
 
 	# ntfy.sh alias to run script
 	    alias ntfy='~/fish-prompt/script/ntfy.sh'
