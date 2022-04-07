@@ -96,7 +96,7 @@
 	    alias t-list="transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -l"
 
 	# Add torrent file
-	    alias t-add="transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -a"
+	    alias t-add="transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -a -s"
 
 	# Check torrent stats
 	    alias t-stats='transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -st && echo'
