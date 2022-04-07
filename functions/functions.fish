@@ -4,7 +4,7 @@ function t-remove
 	transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -t $argv -r
 	end
 
-function t-remove-all
+function t-remove-a
 	transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -t $argv -rad
 	end
 
