@@ -118,3 +118,6 @@
    
 	# git shortcut
 	    alias git_all="git add --all && git commit -m 'update files' && git push"
+
+	# Hardsub script
+	    alias hardsub="~/./termux-backup/good_scripts/hardsub.bash"
