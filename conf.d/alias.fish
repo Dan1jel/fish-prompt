@@ -41,8 +41,11 @@
 	   #alias btcs='/bin/btcs.sh'
 	    alias btcs='~/./termux-backup/good_scripts/btcs.sh'
 
-	# Freshly clean terminal with stats
-	    alias stats='~/./termux-backup/good_scripts/stats.sh'
+	# Freshly clean terminal with ascii art
+	    alias ascii='~/./termux-backup/good_scripts/ascii.sh br'
+
+	# Freshly clean terminal with NSFW ascii art
+	    alias asciix='~/./termux-backup/good_scripts/ascii.sh'
 
 # Some tmux-related shell aliases
 
@@ -121,3 +124,9 @@
 
 	# Hardsub script
 	    alias hardsub="~/./termux-backup/good_scripts/hardsub.bash"
+
+	# Custom neofetch script with ascii art
+	    alias nf="~/./termux-backup/good_scripts/neofetch.sh br"
+	
+	# Custom neofetch script with NSFW ascii art
+	    alias nfx="~/./termux-backup/good_scripts/neofetch.sh"
