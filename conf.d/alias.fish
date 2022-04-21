@@ -107,6 +107,12 @@
 	# Torrent overal stats/conf
 	    alias t-conf='transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -si && echo'
 
+    	# Remote see active torrent-list
+    	    alias t-watch="watch -t -c -d 'transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -l'"
+
+    	# localy see active torrent-list
+ 	    alias t-watch-l="watch -t -c -d 'transmission-remote -n Dan1jel:Paras1t3 -l'"
+
 	# full backup script
 	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
 
