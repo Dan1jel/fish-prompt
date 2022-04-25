@@ -24,4 +24,6 @@ set -Ux FZF_ALT_C_OPTS "--preview 'exa --icons --tree --color=always {}' --previ
 
 set -Ux FZF_CTRL_R_OPTS "--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 
-set -Ux EDITOR vim
+if command -q vim
+    set -Ux EDITOR vim
+end
