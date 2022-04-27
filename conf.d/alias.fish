@@ -132,7 +132,7 @@
 	    alias hardsub="~/./termux-backup/good_scripts/hardsub.bash"
 
 	# Custom neofetch script with ascii art
-	    alias nf="~/./termux-backup/good_scripts/neofetch.sh br"
+	    alias nf="~/./termux-backup/good_scripts/neofetch.sh ap"
 	
 	# Custom neofetch script with NSFW ascii art
 	    alias nfx="~/./termux-backup/good_scripts/neofetch.sh"
