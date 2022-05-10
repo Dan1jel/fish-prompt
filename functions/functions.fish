@@ -108,3 +108,7 @@ function tree
 function transfer
 	command curl --upload-file "$argv" https://transfer.sh/
 	end
+
+function t-transfer
+	command curl --upload-file "$argv" https://transfer.sh/ | termux-clipboard-set
+	end
