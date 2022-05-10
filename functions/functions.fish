@@ -110,5 +110,5 @@ function transfer
 	end
 
 function t-transfer
-	command curl -s 6--upload-file "$argv" https://transfer.sh/ | termux-clipboard-set
+	command curl -s --upload-file "$argv" https://transfer.sh/ | termux-clipboard-set
 	end
