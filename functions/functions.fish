@@ -104,3 +104,7 @@ function ll.
 function tree
 	command exa --tree $argv
 	end
+
+function transfer
+	command curl --upload-file "$argv" https://transfer.sh/bejkon
+	end
