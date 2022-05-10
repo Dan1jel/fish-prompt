@@ -106,5 +106,5 @@ function tree
 	end
 
 function transfer
-	command curl --upload-file "$argv" https://transfer.sh/bejkon
+	command curl --upload-file "$argv" https://transfer.sh/
 	end
