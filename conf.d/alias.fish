@@ -136,3 +136,6 @@
 	
 	# Custom neofetch script with NSFW ascii art
 	    alias nfx="~/./termux-backup/good_scripts/neofetch.sh"
+
+	# Send command to trigger IFTTT applet
+	    alias tmate_pixel='curl -X POST https://maker.ifttt.com/trigger/tmate_scriptwith/key/cJ4O9s1wQj9yRPSv8-eWET'
