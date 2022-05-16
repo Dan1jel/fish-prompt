@@ -138,4 +138,4 @@
 	    alias nfx="~/./termux-backup/good_scripts/neofetch.sh"
 
 	# Send command to trigger IFTTT applet
-	    alias ifttt_tmate='curl -X POST https://maker.ifttt.com/trigger/tmate_scriptwith/key/cJ4O9s1wQj9yRPSv8-eWET'
+	    alias ifttt_tmate='curl -X POST https://maker.ifttt.com/trigger/tmate_script/with/key/cJ4O9s1wQj9yRPSv8-eWET'
