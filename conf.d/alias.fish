@@ -139,3 +139,9 @@
 
 	# Send command to trigger IFTTT applet
 	    alias ifttt_tmate='curl -X POST https://maker.ifttt.com/trigger/tmate_script/with/key/cJ4O9s1wQj9yRPSv8-eWET'
+
+	# Allow External Apps via Termux
+	    alias external-apps-allow="~/./termux-backup/good_scripts/external-apps-allow.bash"
+
+	# Deny External Apps via Termux
+	    alias external-apps-deny="~/./termux-backup/good_scripts/external-apps-deny.bash"
