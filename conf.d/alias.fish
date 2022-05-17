@@ -137,7 +137,7 @@
 	# Custom neofetch script with NSFW ascii art
 	    alias nfx="~/./termux-backup/good_scripts/neofetch.sh"
 
-	# Sencurl -d 'Initiate tmate protocol!' ntfy.sh/bejkond command to trigger tmate script via IFTTT applet > Tasker profile
+	# Send command to trigger tmate script via IFTTT applet > Tasker profile
 	    alias ifttt_tmate='~/fish-prompt/script/ifttt_tmate.sh'
 
 	# Send command to trigger tmate script via ntfy notification > Tasker profile.
