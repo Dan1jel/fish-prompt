@@ -137,8 +137,11 @@
 	# Custom neofetch script with NSFW ascii art
 	    alias nfx="~/./termux-backup/good_scripts/neofetch.sh"
 
-	# Send command to trigger IFTTT applet
-	    alias ifttt_tmate='curl -X POST https://maker.ifttt.com/trigger/tmate_script/with/key/cJ4O9s1wQj9yRPSv8-eWET'
+	# Sencurl -d 'Initiate tmate protocol!' ntfy.sh/bejkond command to trigger tmate script via IFTTT applet > Tasker profile
+	    alias ifttt_tmate='~/fish-prompt/script/ifttt_tmate.sh'
+
+	# Send command to trigger tmate script via ntfy notification > Tasker profile.
+	    alias ntfy_tmate='~/fish-prompt/script/ntfy_tmate.sh'
 
 	# Allow External Apps via Termux
 	    alias termux-external-apps-allow="~/./termux-backup/good_scripts/external-apps-allow.bash"
