@@ -29,4 +29,4 @@ if command -q vim
 end
 
 ############ ADD PATH ###########
-fish_add_path -g ~/.local/bin
+#fish_add_path -g ~/.local/bin
