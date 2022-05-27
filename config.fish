@@ -28,9 +28,5 @@ if command -q vim
     set -Ux EDITOR vim
 end
 
-function fish_prompt_style
-    printf '\e[4 q'
-end
-
 ############ ADD PATH ###########
 fish_add_path /home/pi/.local/bin/
