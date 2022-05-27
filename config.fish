@@ -1,5 +1,3 @@
-#printf '\e[4 q'
-
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -28,6 +26,10 @@ set -Ux FZF_CTRL_R_OPTS "--preview 'echo {}' --preview-window down:3:hidden:wrap
 
 if command -q vim
     set -Ux EDITOR vim
+end
+
+function fish_prompt_style
+    printf '\e[4 q'
 end
 
 ############ ADD PATH ###########
