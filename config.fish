@@ -27,3 +27,6 @@ set -Ux FZF_CTRL_R_OPTS "--preview 'echo {}' --preview-window down:3:hidden:wrap
 if command -q vim
     set -Ux EDITOR vim
 end
+
+############ ADD PATH ###########
+fish_add_path /home/pi/.local/bin/
