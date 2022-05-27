@@ -1,4 +1,4 @@
-printf '\e[4 q'
+#printf '\e[4 q'
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
