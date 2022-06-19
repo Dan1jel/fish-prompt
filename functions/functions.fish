@@ -110,5 +110,5 @@ function transfer
 	end
 
 function transfer-cp
-	command curl --upload-file $argv https://transfer.sh/$argv | termux-clipboard-set && echo "copy to clipboard"
+	command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
 	end
