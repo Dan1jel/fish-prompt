@@ -105,20 +105,16 @@ function tree
 	command exa --tree $argv
 	end
 
-function transfer
-	command curl --upload-file $argv https://transfer.sh/$argv && echo
-	end
-
-#function transfer-cp
-#	command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
+#function transfer
+#	command curl --upload-file $argv https://transfer.sh/$argv && echo
 #	end
 
-function transfer-cp 		# copy transfer URL to clipboard
+function transfer 		# copy transfer URL to clipboard
 	 if command -q termux-clipboard-set
 	 command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
 	else if command -q xclip
 	 command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | xclip -sel clip && cat curl.txt && rm -f curl.txt
 	else
-	  command echo "ERROR > no xclip / termux-clipboard-set found..."
+	 command curl --upload-file $argv https://transfer.sh/$argv && echo
 	 end
 	end
