@@ -110,24 +110,16 @@ function tree
 #	end
 
 function transfer 		# copy transfer URL to clipboard
-	 if command -q termux-clipboard-set
-	 
-	     command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
-
+	if command -q termux-clipboard-set
+	    command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
 	else if command -q xclip
-		command echo test | xclip -sel clip 2>/dev/null
-
-		if test $status -eq 0
-
-	 	command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt
-
-	  	else
-	  	#if test $status -eq 1
-
-	  	command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt && echo "(error copy to clipboard)"
-
-		end
+	    command echo test | xclip -sel clip 2>/dev/null
+	    if test $status -eq 0
+		command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt
+ 	    else
+  		command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt && echo "(error copy to clipboard)"
+	    end
 	else
 	     command curl --upload-file $argv https://transfer.sh/$argv && echo
-	     end
 	end
+end
