@@ -123,3 +123,9 @@ function transfer 		# copy transfer URL to clipboard
 	     command curl --upload-file $argv https://transfer.sh/$argv && echo
 	end
 end
+
+function timg
+	if command -q termux-info
+	termimage $(/usr/bin/ls | shuf -n 1)
+	end
+end
