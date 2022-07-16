@@ -126,6 +126,6 @@ end
 
 function timg
 	if command -q termux-info
-	termimage $(/usr/bin/ls | shuf -n 1)
+	termimage (/usr/bin/ls | shuf -n 1)
 	end
 end
