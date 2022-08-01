@@ -129,3 +129,7 @@ function timg
 	termimage (/usr/bin/ls | shuf -n 1)
 	end
 end
+
+function kick
+	pkill -u -9 $argv
+end
