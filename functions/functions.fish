@@ -133,3 +133,11 @@ end
 function kick
 	pkill -u -9 $argv
 end
+
+function matrix
+	if command -q unimatrix
+	 unimatrix -a -f -s 97
+	else
+	 cmatrix
+	end
+       end
