@@ -116,6 +116,9 @@
 	# full backup script
 	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
 
+	# full backup of RaspbianOS with nohup
+	    alias nohup-backup='~/.dotfiles/scripts/nohup_backup.bash'
+
 	# Termux setup script
 	    alias setup='~/termux-backup/setup.sh'
 
