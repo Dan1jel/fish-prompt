@@ -47,20 +47,20 @@
 	# Freshly clean terminal with NSFW ascii art
 	    alias asciix='~/./termux-backup/good_scripts/ascii.sh'
 
-# Some tmux-related shell aliases
+	### Some tmux-related shell aliases ###
 
-        # Attaches tmux to the last session; creates a new session if none >
-            alias t='tmux attach || tmux new-session'
+	# Attaches tmux to the last session; creates a new session if none >
+	    alias t='tmux attach || tmux new-session'
 
-        # Attaches tmux to a session (example: ta portal)
-            alias ta='tmux attach -t'
+	# Attaches tmux to a session (example: ta portal)
+	    alias ta='tmux attach -t'
 
-        # Creates a new session
-            #alias tn='tmux new-session -t'
+	# Creates a new session
+	    #alias tn='tmux new-session -t'
 	    alias tn='tmux new -s'
 
-        # Lists all ongoing sessions
-            alias tl='tmux list-sessions'
+	# Lists all ongoing sessions
+	    alias tl='tmux list-sessions'
 
 	# Kill tmux session by name ex. 'tk test'
 	    alias tk='tmux kill-session -t'
@@ -107,10 +107,10 @@
 	# Torrent overal stats/conf
 	    alias t-conf='transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -si && echo'
 
-    	# Remote see active torrent-list
-    	    alias t-watch="watch -t -c -d 'transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -l'"
+	# Remote see active torrent-list
+	    alias t-watch="watch -t -c -d 'transmission-remote http://bejkon.duckdns.org:9091/transmission -n Dan1jel:Paras1t3 -l'"
 
-    	# localy see active torrent-list
+	# localy see active torrent-list
  	    alias t-watch-l="watch -t -c -d 'transmission-remote -n Dan1jel:Paras1t3 -l'"
 
 	# full backup script
