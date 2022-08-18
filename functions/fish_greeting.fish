@@ -1,17 +1,29 @@
 #code from Bobthefish theme
 function fish_greeting -d "What's up, fish?"
-#    clear
 
-    if command -q neofetch ### neofetch alias ###
-	nf
-    end
+#    clear ### clear script ###
 
-    #set_color $fish_color_autosuggestion
-    #uname -nmsr
-	
-    	# TODO: `command -q -s` only works on fish 2.5+, so hold off on that for now
-    # command -s uptime >/dev/null
-    # and command uptime
-	#stats br
-    set_color normal
+/usr/bin/clear
+
+echo -e "\e[38;5;246m  $(uname -nmsr)"
+echo -e "\e[38;5;246m $(uptime)\033[00m"
+
+
+#   if command -q neofetch ### neofetch alias ###
+#     nf
+#   end
+
+#   set_color $fish_color_autosuggestion
+      
+#     uname -nmsr	
+#     command -s uptime >/dev/null
+#     and command uptime
+
+#   set_color normal
+
+neofetch --ascii_colors 7 --ascii ~/termux-backup/ascii_art/neofetch/ascii_ap
+
+### NFSW ASCII ###
+#neofetch --ascii_colors 7 --ascii ~/termux-backup/ascii_art/neofetch/$(shuf -n1 ~/termux-backup/ascii_art/neofetch/ascii_list.txt)
+
 end
