@@ -3,7 +3,7 @@ function fish_greeting -d "What's up, fish?"
 
 #    clear ### clear script ###
 
-/usr/bin/clear
+#/usr/bin/clear
 
 bash -c 'echo -e "\e[38;5;246m  $(uname -nmsr)"'
 bash -c 'echo -e "\e[38;5;246m $(uptime)\033[00m"'
