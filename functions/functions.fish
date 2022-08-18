@@ -137,7 +137,9 @@ end
 function matrix
 	if command -q unimatrix
 	 unimatrix -a -f -s 97
-	else
+	else if command -q cmatrix
 	 cmatrix
-	end
+	else
+	# echo " * Neither of unimatrix or cmatrix is installed."
        end
+      end

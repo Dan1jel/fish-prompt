@@ -1,9 +1,9 @@
 #code from Bobthefish theme
 function fish_greeting -d "What's up, fish?"
-    clear
+#    clear
 
-    if command -q neofetch
-      nf ### neofetch alias ###
+    if command -q neofetch ### neofetch alias ###
+	nf
     end
 
     #set_color $fish_color_autosuggestion
