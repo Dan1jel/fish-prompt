@@ -5,8 +5,8 @@ function fish_greeting -d "What's up, fish?"
 
 /usr/bin/clear
 
-echo -e "\e[38;5;246m  $(uname -nmsr)"
-echo -e "\e[38;5;246m $(uptime)\033[00m"
+bash -c 'echo -e "\e[38;5;246m  $(uname -nmsr)"'
+bash -c 'echo -e "\e[38;5;246m $(uptime)\033[00m"'
 
 
 #   if command -q neofetch ### neofetch alias ###
