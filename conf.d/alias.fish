@@ -68,12 +68,13 @@
 	# Script to load Tmux-panes
 	    alias load-tmux='~/./termux-backup/good_scripts/tmux.sh'
 
-	# Raspberry Shortcut 
+	# Raspberry Server Shortcut 
 #	    alias pi='ssh -p4404 pi@bejkon.duckdns.org'
 	    alias pi='~/termux-backup/good_scripts/ssh_pi.sh'
 
-	# Raspberry Shortcut 
-	    alias zero='ssh -p4405 pi@bejkon2.duckdns.org'
+	# Raspberry Zero Shortcut 
+#	    alias zero='ssh -p4405 pi@bejkon2.duckdns.org'
+	    alias zero='~/termux-backup/good_scripts/ssh_zero.sh'
 
 	# Chromebook laptop Shortcut 
 	    alias lulu='ssh -p4406 danijel@bejkonlulu.duckdns.org'
