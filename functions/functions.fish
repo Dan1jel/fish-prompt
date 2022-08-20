@@ -159,3 +159,11 @@ function zero --description='Raspberry Zero SSH shortcut'
 	 ssh -p 4405 pi@bejkon2.duckdns.org
  end
 end
+
+function lulu --description='Dell Chromebook (lulu) SSH shortcut'
+	if test -e ~/termux-backup/good_scripts/ssh_lulu.sh
+	 ~/termux-backup/good_scripts/ssh_lulu.sh $argv
+	else
+	 ssh -p 4406 pi@bejkonlulu.duckdns.org
+ end
+end
