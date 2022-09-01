@@ -29,22 +29,21 @@ if command -q vim
 end
 
 ############ ADD PATH ###########
-#fish_add_path -g ~/.local/bin
 
-if command -q hostname =~ "raspberrypi"
-    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
-    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
-end
+contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
+
+contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
+
 
 #if command -q hostname =~ "raspberrypi"
+#    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
 #    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
 #end
 
-
-if command -q whoami =~ "u0_a384"
-    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
-    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
-
+#if command -q whoami =~ "u0_a384"
+#    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
+#    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
+#
 #     fish_add_path  ~/.local/bin/
 #    set PATH $PATH ~/.local/bin/
-end
+#end
