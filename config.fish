@@ -32,13 +32,19 @@ end
 #fish_add_path -g ~/.local/bin
 
 if command -q hostname =~ "raspberrypi"
-  and ! fish_add_path -m ~/.cargo/bin/
-#     fish_add_path ~/.cargo/bin/
-      set PATH $PATH ~/.cargo/bin/
+    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
+    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
 end
 
+#if command -q hostname =~ "raspberrypi"
+#    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
+#end
+
+
 if command -q whoami =~ "u0_a384"
-  and ! fish_add_path -m ~/.local/bin/
-     fish_add_path  ~/.local/bin/
+    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
+    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
+
+#     fish_add_path  ~/.local/bin/
 #    set PATH $PATH ~/.local/bin/
 end
