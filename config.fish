@@ -31,10 +31,10 @@ end
 ############ ADD PATH ###########
 #fish_add_path -g ~/.local/bin
 
-if test -d ~/.cargo/bin
-    set PATH $PATH ~/.cargo/bin/
-end
+#if test -d ~/.cargo/bin
+#    set PATH $PATH ~/.cargo/bin/
+#end
 
-if test -d ~/.local/bin
-    set PATH $PATH ~/.local/bin/
-end
+#if test -d ~/.local/bin
+#    set PATH $PATH ~/.local/bin/
+#end
