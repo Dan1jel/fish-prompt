@@ -31,12 +31,14 @@ end
 ############ ADD PATH ###########
 #fish_add_path -g ~/.local/bin
 
-if ! fish_add_path -m ~/.cargo/bin/
-     fish_add_path ~/.cargo/bin/
-#    set PATH $PATH ~/.cargo/bin/
+if command -q hostname =~ "raspberrypi"
+  and ! fish_add_path -m ~/.cargo/bin/
+#     fish_add_path ~/.cargo/bin/
+      set PATH $PATH ~/.cargo/bin/
 end
 
-if ! fish_add_path -m ~/.local/bin/
+if command -q whoami =~ "u0_a384"
+  and ! fish_add_path -m ~/.local/bin/
      fish_add_path  ~/.local/bin/
 #    set PATH $PATH ~/.local/bin/
 end
