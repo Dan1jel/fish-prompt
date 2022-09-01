@@ -30,10 +30,13 @@ end
 
 ############ ADD PATH ###########
 
-contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
+if test -d ~/.cargo/bin/
+	contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
+end
 
-contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
-
+if test -d ~/.local/bin/
+	contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
+end
 
 #if command -q hostname =~ "raspberrypi"
 #    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
