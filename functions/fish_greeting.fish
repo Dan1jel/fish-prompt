@@ -21,9 +21,10 @@ bash -c 'echo -e "\e[38;5;246m $(uptime)\033[00m"'
 
 #   set_color normal
 
-	if command -q neofetch 
-	  neofetch --ascii_colors 7 --ascii ~/termux-backup/ascii_art/neofetch/ascii_ap
+#	if command -q neofetch 
+#	  neofetch --ascii_colors 7 --ascii ~/termux-backup/ascii_art/neofetch/ascii_ap
 	  ### NFSW ASCII ###
 	  #neofetch --ascii_colors 7 --ascii ~/termux-backup/ascii_art/neofetch/$(shuf -n1 ~/termux-backup/ascii_art/neofetch/ascii_list.txt)
-	end
+#	end
+echo
 end
