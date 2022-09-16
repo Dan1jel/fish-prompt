@@ -30,23 +30,24 @@ end
 
 ############ ADD PATH ###########
 
-if test -d ~/.cargo/bin/
-	contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
-end
-
-if test -d ~/.local/bin/
-	contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
-end
-
-#if command -q hostname =~ "raspberrypi"
-#    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
-#    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
-#end
-
-#if command -q whoami =~ "u0_a384"
-#    contains ~/.cargo/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
-#    contains ~/.local/bin/ $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
+# if test -d ~/.cargo/bin/
+#	contains -- $HOME/.cargo/bin/ $fish_user_paths; or set -g fish_user_paths $HOME/.cargo/bin
+# end
 #
+# if test -d ~/.local/bin/
+#	contains -- $HOME/.local/bin/ $fish_user_paths; or set fish_user_paths $HOEM/.local/bin
+# end
+#
+# if test -d ~/.fzf/bin/
+#	contains -- $HOME/.fzf/bin/ $fish_user_paths; or set fish_user_paths $HOME/.fzf/bin
+# end
+# 
+# if test -d ~/fzf/bin/
+#	contains -- $HOME/fzf/bin/ $fish_user_paths; or set -U fish_user_paths $HOME/fzf/bin
+# end
+
+set -U fish_user_paths $HOME/bin $HOME/fzf/bin $HOME/.fzf/bin $HOME/.local/bin $HOME/.cargo/bin
+
 #     fish_add_path  ~/.local/bin/
 #    set PATH $PATH ~/.local/bin/
 #end
