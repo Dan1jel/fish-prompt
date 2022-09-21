@@ -126,16 +126,16 @@ end
 
 function test-transfer 		# copy transfer URL to clipboard
 	if command -q termux-clipboard-set
-	    command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6} END{print $0}' > curl.txt && cat curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
+	    command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6} END{print $0}' > curl.txt && tail -1 curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
 	    #command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
 	else if command -q xclip
 	    command echo test | xclip -sel clip 2>/dev/null
 	    if test $status -eq 0
-		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6} END{print $0}' > curl.txt && cat curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt
+		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6} END{print $0}' > curl.txt && cat tail -n1 curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt
 		#command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt
  	    else
 		echo -e "\e[1;31m[x]\e[0m - Error copy to clipboard! - \e[1;31m[x]\e[0m" 
-		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6} END{print $0}' > curl.txt && cat curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt #&& echo "(error copy to clipboard)"
+		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6} END{print $0}' > curl.txt && tail -n1 curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt #&& echo "(error copy to clipboard)"
   		#command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | xclip -sel clip 2>/dev/null; cat curl.txt && rm -f curl.txt && echo "(error copy to clipboard)"
 	    end
 	else
