@@ -107,17 +107,17 @@ function tree
 
 function transfer 		# copy transfer URL to clipboard
 	if command -q termux-clipboard-set
-	    command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | sed -z 's/\n$//' | termux-clipboard-set && cat curl_transfer.log
+	    command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete-url-token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | sed -z 's/\n$//' | termux-clipboard-set && cat curl_transfer.log
 	else if command -q xclip
 	    command echo test | xclip -sel clip 2>/dev/null
 	    if test $status -eq 0
-		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | sed -z 's/\n$//' | xclip -sel clip 2>/dev/null; cat curl_transfer.log
+		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete-url-token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | sed -z 's/\n$//' | xclip -sel clip 2>/dev/null; cat curl_transfer.log
  	    else
 		echo -e "\e[1;31m[x]\e[0m - Error copy to clipboard! - \e[1;31m[x]\e[0m" 
-		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | xclip -sel clip 2>/dev/null; cat curl_transfer.log
+		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete-url-token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | xclip -sel clip 2>/dev/null; cat curl_transfer.log
 	    end
 	else
-	     command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6};END{print $0}'
+	     command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete-url-token: "$6};END{print $0}'
 	end
 end
 
