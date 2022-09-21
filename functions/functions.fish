@@ -126,7 +126,7 @@ end
 
 function test-transfer 		# copy transfer URL to clipboard
 	if command -q termux-clipboard-set
-	    command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6} END{print $0}' > curl.txt && tail -n1 curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
+	    command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete Token: "$6} END{print $0}' > curl.txt && tail -n1 curl.txt | sed -z 's/\n$//' | termux-clipboard-set && cat curl.txt && rm -f curl.txt
 	    #command curl -s --upload-file $argv https://transfer.sh/$argv -o curl.txt && cat curl.txt | termux-clipboard-set && cat curl.txt && rm -f curl.txt
 	else if command -q xclip
 	    command echo test | xclip -sel clip 2>/dev/null
