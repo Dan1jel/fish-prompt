@@ -68,16 +68,17 @@
 	# Script to load Tmux-panes
 	    alias load-tmux='~/./termux-backup/good_scripts/tmux.sh'
 
+	# New connection with fish / bash shell
+	    alias ssh_fish='~/termux-backup/good_scripts/ssh_fish.sh'
+
 	# Raspberry Server Shortcut 
-#	    alias pi_old='ssh -p4404 pi@bejkon.duckdns.org'
-#	    alias pi_old='~/termux-backup/good_scripts/ssh_pi.sh'
+	    alias pi='ssh -t -p 4404 pi@bejkon.duckdns.org "ssh_fish"'
 
 	# Raspberry Zero Shortcut 
-#	    alias zero_old='ssh -p4405 pi@bejkon2.duckdns.org'
-#	    alias zero_old='~/termux-backup/good_scripts/ssh_zero.sh'
+	    alias zero='ssh -t -p 4405 pi@bejkon2.duckdns.org "ssh_fish"'
 
 	# Chromebook laptop Shortcut 
-	    alias lulu='ssh -p4406 danijel@bejkonlulu.duckdns.org'
+	    alias lulu='ssh -t -p 4406 danijel@bejkonlulu.duckdns.org "ssh_fish"'
 
 	# Display work log
 	    alias work='tail ~/storage/downloads/termux/work_time.txt'

@@ -46,8 +46,7 @@ end
 #	contains -- $HOME/fzf/bin/ $fish_user_paths; or set -U fish_user_paths $HOME/fzf/bin
 # end
 
-set -U fish_user_paths $HOME/bin $HOME/fzf/bin $HOME/.fzf/bin $HOME/.local/bin $HOME/.cargo/bin
-
+set -U fish_user_paths $HOME/bin $HOME/fzf/bin $HOME/.fzf/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/local/bin
 #     fish_add_path  ~/.local/bin/
 #    set PATH $PATH ~/.local/bin/
 #end

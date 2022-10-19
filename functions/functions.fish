@@ -141,27 +141,3 @@ function matrix
 	# echo " * Neither of unimatrix or cmatrix is installed."
        end
       end
-
-function pi --description='Raspberry Server SSH shortcut'
-	if test -e ~/termux-backup/good_scripts/ssh_pi.sh
-	 ~/termux-backup/good_scripts/ssh_pi.sh $argv
-	else
-	 ssh -p 4404 pi@bejkon.duckdns.org
- end
-end
-
-function zero --description='Raspberry Zero SSH shortcut'
-	if test -e ~/termux-backup/good_scripts/ssh_zero.sh
-	 ~/termux-backup/good_scripts/ssh_zero.sh $argv
-	else
-	 ssh -p 4405 pi@bejkon2.duckdns.org
- end
-end
-
-function lulu --description='Dell Chromebook (lulu) SSH shortcut'
-	if test -e ~/termux-backup/good_scripts/ssh_lulu.sh
-	 ~/termux-backup/good_scripts/ssh_lulu.sh $argv
-	else
-	 ssh -p 4406 pi@bejkonlulu.duckdns.org
- end
-end
