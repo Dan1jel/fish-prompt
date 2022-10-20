@@ -72,13 +72,16 @@
 	    alias ssh_fish='~/termux-backup/good_scripts/ssh_fish.sh'
 
 	# Raspberry Server Shortcut 
-	    alias pi='ssh -t -p 4404 pi@bejkon.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
+	    alias pi='ssh -t -p 4404 pi@bejkon.duckdns.org "/usr/bin/clear;fish"'
+#	    alias pi='ssh -t -p 4404 pi@bejkon.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
 
 	# Raspberry Zero Shortcut 
-	    alias zero='ssh -t -p 4405 pi@bejkon2.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
+	    alias zero='ssh -t -p 4405 pi@bejkon2.duckdns.org "/usr/bin/clear;bash"'
+#	    alias zero='ssh -t -p 4405 pi@bejkon2.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
 
 	# Chromebook laptop Shortcut 
-	    alias lulu='ssh -t -p 4406 danijel@bejkonlulu.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
+	    alias lulu='ssh -t -p 4406 danijel@bejkonlulu.duckdns.org "/usr/bin/clear;fish"'
+#	    alias lulu='ssh -t -p 4406 danijel@bejkonlulu.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
 
 	# Display work log
 	    alias work='tail ~/storage/downloads/termux/work_time.txt'
