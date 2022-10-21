@@ -65,8 +65,11 @@
 	# Kill tmux session by name ex. 'tk test'
 	    alias tk='tmux kill-session -t'
 
+	# Tmux script to auto-load panes and detach for Tasker
+	    alias tasker-tmux='~/.dotfiles/scripts/tmux_tasker.sh'
+
 	# Script to load Tmux-panes
-	    alias load-tmux='~/./termux-backup/good_scripts/tmux.sh'
+	    alias load-tmux='~/.dotfiles/scripts/tmux.sh'
 
 	# New connection with fish / bash shell
 	    alias ssh_fish='~/termux-backup/good_scripts/ssh_fish.sh'
