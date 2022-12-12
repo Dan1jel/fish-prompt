@@ -126,7 +126,11 @@ function transfer 		# copy transfer URL to clipboard
 end
 
 function transfer-delete 	# delete uploaded transfer with URL
-	curl -X DELETE $argv && echo "file deleted." || echo "error deleting file."
+	curl -X DELETE $argv
+end 
+
+function x-url-delete		# delete uploaded transfer with URL
+	curl -X DELETE $argv
 end 
 
 function timg
