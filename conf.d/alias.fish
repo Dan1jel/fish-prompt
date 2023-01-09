@@ -26,6 +26,9 @@
 	# Reload the shell (i.e. invoke as a login shell)
 	    alias reload='/usr/bin/clear && exec fish'
 
+	# Reload qbittorrent and Plex to free swap memory
+	    alias reload-apps='sudo systemctl stop qbittorrent plexmediaserver && sudo systemctl start qbittorrent plexmediaserver'
+
 	# Find a command in grep history
 	    alias gh='history|grep'
 
