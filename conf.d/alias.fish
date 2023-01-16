@@ -138,7 +138,7 @@
 	    alias pipe-saver='pipes.sh -t2 -f20 -p2'
 
 	# ntfy.sh alias to run script
-	    alias ntfy='~/fish-prompt/script/ntfy.sh'
+	    alias done_ntfy='~/fish-prompt/script/ntfy.sh'
    
 	# git shortcut
 	    alias git_all="git add --all && git commit -m 'update files' && git push"
