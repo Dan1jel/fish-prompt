@@ -152,6 +152,12 @@
 	# Custom neofetch script with NSFW ascii art
 	    alias nfx="~/./termux-backup/good_scripts/neofetch.sh"
 
+	# Custom fastfetch script with ascii art
+	    alias ff="~/./termux-backup/good_scripts/fastfetch.sh ap"
+	
+	# Custom neofetch script with NSFW ascii art
+	    alias ffx="~/./termux-backup/good_scripts/fastfetch.sh"
+
 	# Send command to trigger tmate script via IFTTT applet > Tasker profile
 	    alias ifttt_tmate='~/fish-prompt/script/ifttt_tmate.sh'
 
