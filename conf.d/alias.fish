@@ -159,6 +159,9 @@
 	    alias ffx="~/./termux-backup/good_scripts/fastfetch.sh"
 
 	# Send command to trigger tmate script via IFTTT applet > Tasker profile
+	    alias ifttt='~/termux-backup/good_scripts/ifttt.bash'
+
+	# Send command to trigger tmate script via IFTTT applet > Tasker profile
 	    alias ifttt_tmate='~/fish-prompt/script/ifttt_tmate.sh'
 
 	# Send command to trigger tmate script via ntfy notification > Tasker profile.
