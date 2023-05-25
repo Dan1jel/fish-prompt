@@ -128,6 +128,9 @@
 	# full backup script
 	    alias full-backup='~/.dotfiles/scripts/./tmux_backup.sh'
 
+	# full igdrive backup script
+	    alias gdrive-backup='~/.dotfiles/scripts/./gdrive_backup.sh'
+
 	# full backup of RaspbianOS with nohup
 	    alias nohup-backup='~/.dotfiles/scripts/nohup_backup.bash'
 
