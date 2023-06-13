@@ -79,6 +79,8 @@
 
 	# Raspberry Server Shortcut 
 	    alias pi='ssh -t -p 4404 pi@bejkon.duckdns.org "/usr/bin/clear;fish"'
+	# Raspberry Pi 4b (4gb) server.
+	    alias pi4='ssh -t -p 4441 pi@bejkon4.duckdns.org "/usr/bin/clear;fish"'
 #	    alias pi='ssh -t -p 4404 pi@bejkon.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
 
 	# Raspberry Zero Shortcut 
