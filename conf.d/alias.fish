@@ -74,22 +74,20 @@
 	# Script to load Tmux-panes
 	    alias load-tmux='$HOME/.dotfiles/scripts/tmux.sh'
 
+	# Script to load Arlo Cameras.
+	    alias load-arlo='$HOME/.dotfiles/scripts/tmux_arlo.sh'
+
 	# New connection with fish / bash shell
 	    alias ssh_fish='~/termux-backup/good_scripts/ssh_fish.sh'
 
-	# Raspberry Server Shortcut 
-	    alias pi='ssh -t -p 4404 pi@bejkon.duckdns.org "/usr/bin/clear;fish"'
 	# Raspberry Pi 4b (4gb) server.
 	    alias pi4='ssh -t -p 4441 pi@bejkon4.duckdns.org "/usr/bin/clear;fish"'
-#	    alias pi='ssh -t -p 4404 pi@bejkon.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
 
 	# Raspberry Zero Shortcut 
 	    alias zero='ssh -t -p 4405 pi@bejkon2.duckdns.org "/usr/bin/clear;bash"'
-#	    alias zero='ssh -t -p 4405 pi@bejkon2.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
 
 	# Chromebook laptop Shortcut 
 	    alias lulu='ssh -t -p 4406 danijel@bejkonlulu.duckdns.org "/usr/bin/clear;fish"'
-#	    alias lulu='ssh -t -p 4406 danijel@bejkonlulu.duckdns.org "~/termux-backup/good_scripts/ssh_fish.sh"'
 
 	# Display work log
 	    alias work='tail ~/storage/downloads/termux/work_time.txt'
