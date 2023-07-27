@@ -39,7 +39,7 @@ function srt
 #	end
 
 function shorturl	# functipn to creat short url
-	command	curl "https://is.gd/create.php?format=simple&url=$argv"
+	command	curl "https://is.gd/create.php?format=simple&url=$argv" && echo ""
 	end
 
 function cat 		# use bat instead of cat
