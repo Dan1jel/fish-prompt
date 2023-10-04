@@ -62,56 +62,56 @@ function find 		# Replace find with fdfind (fd on termux)
 	 end
 	end
 
-function l		# Replace 'ls' with 'exa' (if available) + some aliases.
-	 if command -q exa
-	  command exa --icons --color=always $argv
+function l		# Replace 'ls' with 'eza' (if available) + some aliases.
+	 if command -q eza
+	  command eza --icons --color=always $argv
 	 else
 	  command ls -G $argv
 	 end
 	end
 
 function ls
-         if command -q exa
-	  command exa -a --icons --color=always $argv
+         if command -q eza
+	  command eza -a --icons --color=always $argv
 	 else
 	  command ls -G $argv
 	 end
 	end
 
 function l. 
-	 if command -q exa 
-	  command exa --icons --color=always -d .* $argv
+	 if command -q eza 
+	  command eza --icons --color=always -d .* $argv
 	 else
 	  command ls -d .* $argv
 	 end
 	end
 
 function la 
-	 if command -q exa 
-	  command exa -la --icons --color=always $argv
+	 if command -q eza 
+	  command eza -la --icons --color=always $argv
 	 else
 	  command ls -a $argv
 	 end
 	end
 
 function ll
-	 if command -q exa 
-	  command exa -Fhl --icons --color=always $argv
+	 if command -q eza 
+	  command eza -Fhl --icons --color=always $argv
 	 else
 	  command ls -Fhl $argv
 	 end
 	end
 
 function ll.
-	 if command -q exa 
-	  command exa -Fhl -d .* $argv
+	 if command -q eza 
+	  command eza -Fhl -d .* $argv
 	 else
 	  command ls -Fhl -d .* $argv
 	 end
 	end
 
 function tree
-	command exa --tree $argv
+	command eza --tree $argv
 	end
 
 function transfer 		# copy transfer URL to clipboard
