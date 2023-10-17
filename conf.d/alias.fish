@@ -84,7 +84,7 @@
 	    alias pi4='ssh -t -p 4441 pi@bejkon4.duckdns.org "/usr/bin/clear;fish"'
 
 	# Raspberry Zero Shortcut 
-	    alias zero='ssh -t -p 4405 pi@bejkon2.duckdns.org "/usr/bin/clear;bash"'
+	    alias fire='ssh -t -p 4405 pi@bejkon2.duckdns.org "/usr/bin/clear;bash"'
 
 	# Chromebook laptop Shortcut 
 	    alias lulu='ssh -t -p 4406 danijel@bejkonlulu.duckdns.org "/usr/bin/clear;fish"'
