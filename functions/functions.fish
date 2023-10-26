@@ -159,5 +159,55 @@ function matrix
 	 cmatrix
 	else
 	# echo " * Neither of unimatrix or cmatrix is installed."
-       end
-      end
+        end
+end
+
+function pi44
+    if command -q termux-info
+        command termux-wifi-connectioninfo | grep -q 'Google_Wifi' 2>/dev/null
+        if test $status -eq 0
+            ssh -t -p 4441 pi@192.168.87.23 '/usr/bin/clear;fish'
+        else
+            ssh -t -p 4441 pi@bejkon4.duckdns.org '/usr/bin/clear;fish'
+        end
+	#    end
+    else if command sudo iwgetid | grep -q 'Google_Wifi' 2>/dev/null
+        if test $status -eq 0
+            ssh -t -p 4441 pi@192.168.87.23 '/usr/bin/clear;fish'
+        else
+            ssh -t -p 4441 pi@bejkon4.duckdns.org '/usr/bin/clear;fish'
+        end
+	#    end
+    else if command sudo ifconfig | grep -q '192.168.87' 2>/dev/null
+        if test $status -eq 0
+            ssh -t -p 4441 pi@192.168.87.23 '/usr/bin/clear;fish'
+        else
+            ssh -t -p 4441 pi@bejkon4.duckdns.org '/usr/bin/clear;fish'
+        end
+    end
+end
+
+function firee
+    if command -q termux-info
+        command termux-wifi-connectioninfo | grep -q 'Google_Wifi' 2>/dev/null
+        if test $status -eq 0
+            ssh -t -p 4405 pi@192.168.87.250 '/usr/bin/clear;fish'
+        else
+            ssh -t -p 4405 pi@bejkon2.duckdns.org '/usr/bin/clear;fish'
+        end
+	#    end
+    else if command sudo iwgetid | grep -q 'Google_Wifi' 2>/dev/null
+        if test $status -eq 0
+            ssh -t -p 4405 pi@192.168.87.250 '/usr/bin/clear;fish'
+        else
+            ssh -t -p 4405 pi@bejkon4.duckdns.org '/usr/bin/clear;fish'
+        end
+	#    end
+    else if command sudo ifconfig | grep -q '192.168.87' 2>/dev/null
+        if test $status -eq 0
+            ssh -t -p 4405 pi@192.168.87.250 '/usr/bin/clear;fish'
+        else
+            ssh -t -p 4405 pi@bejkon2.duckdns.org '/usr/bin/clear;fish'
+        end
+    end
+end
