@@ -162,7 +162,7 @@ function matrix
         end
 end
 
-function pi44
+function pi4
     if command -q termux-info
         command termux-wifi-connectioninfo | grep -q 'Google_Wifi' 2>/dev/null
         if test $status -eq 0
@@ -187,7 +187,7 @@ function pi44
     end
 end
 
-function firee
+function fire
     if command -q termux-info
         command termux-wifi-connectioninfo | grep -q 'Google_Wifi' 2>/dev/null
         if test $status -eq 0
