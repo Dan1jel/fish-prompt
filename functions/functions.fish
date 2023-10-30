@@ -166,21 +166,21 @@ function pi4
     if command -q termux-info
         command termux-wifi-connectioninfo | grep -q 'Google_Wifi' 2>/dev/null
         if test $status -eq 0
-            ssh -t -p 4441 pi@192.168.87.23 '/usr/bin/clear;fish'
+            ssh -t -p 4441 pi@192.168.87.25 '/usr/bin/clear;fish'
         else
             ssh -t -p 4441 pi@bejkon4.duckdns.org '/usr/bin/clear;fish'
         end
 	#    end
     else if command sudo iwgetid | grep -q 'Google_Wifi' 2>/dev/null
         if test $status -eq 0
-            ssh -t -p 4441 pi@192.168.87.23 '/usr/bin/clear;fish'
+            ssh -t -p 4441 pi@192.168.87.25 '/usr/bin/clear;fish'
         else
             ssh -t -p 4441 pi@bejkon4.duckdns.org '/usr/bin/clear;fish'
         end
 	#    end
     else if command sudo ifconfig | grep -q '192.168.87' 2>/dev/null
         if test $status -eq 0
-            ssh -t -p 4441 pi@192.168.87.23 '/usr/bin/clear;fish'
+            ssh -t -p 4441 pi@192.168.87.25 '/usr/bin/clear;fish'
         else
             ssh -t -p 4441 pi@bejkon4.duckdns.org '/usr/bin/clear;fish'
         end
