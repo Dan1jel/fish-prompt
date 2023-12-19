@@ -81,10 +81,16 @@
 	    alias ssh_fish='~/termux-backup/good_scripts/ssh_fish.sh'
 
 	# Raspberry Pi 4b (4gb) server.
-	#    alias pi4='ssh -t -p 4441 pi@bejkon4.duckdns.org "/usr/bin/clear;fish"'
+	    alias pi4='ssh -t -p 4441 pi@bejkon4.duckdns.org "/usr/bin/clear;fish"'
 
-	# Raspberry Zero Shortcut 
-	#    alias fire='ssh -t -p 4405 pi@bejkon2.duckdns.org "/usr/bin/clear;bash"'
+	# Raspberry Pi 4b (4gb) server (local).
+	    alias pi4-l='ssh -t -p 4441 pi@192.168.87.23 "/usr/bin/clear;fish"'
+
+	# Raspberry PiHole Shortcut 
+	    alias fire='ssh -t -p 4405 pi@bejkon2.duckdns.org "/usr/bin/clear;bash"'
+
+	# Raspberry PiHole Shortcut (local).
+	    alias fire-l='ssh -t -p 4405 pi@192.168.87.250 "/usr/bin/clear;bash"'
 
 	# Chromebook laptop Shortcut 
 	    alias lulu='ssh -t -p 4406 danijel@bejkonlulu.duckdns.org "/usr/bin/clear;fish"'
