@@ -27,7 +27,7 @@
 	    alias reload='/usr/bin/clear && exec fish'
 
 	# Reload qbittorrent and Plex to free swap memory
-	    alias reload-apps='sudo systemctl stop qbittorrent plexmediaserver && sudo snap stop tautulli && sudo systemctl start qbittorrent plexmediaserver && sudo snap start tautulli 1> /dev/null'
+	    alias reload-apps='~/./.dotfiles/scripts/reload-apps.sh'
 
 	# Find a command in grep history
 	    alias gh='history|grep'
