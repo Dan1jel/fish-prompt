@@ -68,6 +68,12 @@
 	# Kill tmux session by name ex. 'tk test'
 	    alias tk='tmux kill-session -t'
 
+	# Tmux script to auto-load panes and detach for Tasker
+	    alias tasker-tmux='$HOME/.dotfiles/scripts/tmux_tasker.sh'
+
+	# Script to load Tmux-panes
+	    alias load-tmux='$HOME/.dotfiles/scripts/tmux.sh'
+
 	# Attaches Zellij to a session (example: za portal)
 	    alias za='zellij a'
 
@@ -77,11 +83,11 @@
 	# Kill zellij session by name ex. 'zk test'
 	    alias zk='zellij k'
 
-	# Tmux script to auto-load panes and detach for Tasker
-	    alias tasker-tmux='$HOME/.dotfiles/scripts/tmux_tasker.sh'
+ 	# delete zellij session by name ex. 'zd test'
+	    alias zd='zellij d'
 
-	# Script to load Tmux-panes
-	    alias load-tmux='$HOME/.dotfiles/scripts/tmux.sh'
+	# Script to load zellij panes.
+	    alias load-zellij='$HOME/.dotfiles/scripts/zellij.sh'
 
 	# Script to load Arlo Cameras.
 	    alias load-arlo='$HOME/.dotfiles/scripts/tmux_arlo.sh'
