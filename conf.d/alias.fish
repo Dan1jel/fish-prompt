@@ -68,6 +68,15 @@
 	# Kill tmux session by name ex. 'tk test'
 	    alias tk='tmux kill-session -t'
 
+	# Attaches Zellij to a session (example: za portal)
+	    alias za='zellij a'
+
+	# Lists all sessions
+	    alias zls='zellij ls'
+
+	# Kill zellij session by name ex. 'zk test'
+	    alias zk='zellij k'
+
 	# Tmux script to auto-load panes and detach for Tasker
 	    alias tasker-tmux='$HOME/.dotfiles/scripts/tmux_tasker.sh'
 
