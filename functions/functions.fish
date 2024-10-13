@@ -96,7 +96,7 @@ function la
 
 function ll
 	 if command -q eza 
-	  command eza -Fhl --icons --color=always $argv
+	  command eza -F=never -hl --icons --color=always $argv
 	 else
 	  command ls -Fhl $argv
 	 end
