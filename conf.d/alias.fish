@@ -196,3 +196,6 @@
 
 	# Deny External Apps via Termux
 	    alias termux-external-apps-deny="~/./termux-backup/good_scripts/external-apps-deny.bash"
+
+	# Short command to update servers via topgrade (diffrent config file). 
+	    alias topgrade-all="topgrade --config ~/.config/topgrade_all.toml"
