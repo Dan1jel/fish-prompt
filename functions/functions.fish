@@ -74,7 +74,7 @@ function ls
          if command -q eza
 	  command eza -F=auto --icons --color=always -a $argv
 	 else
-	  command ls --color=auto -FG $argv
+	  command ls --color=auto -FGA $argv
 	 end
 	end
 
@@ -90,7 +90,7 @@ function la
 	 if command -q eza 
 	  command eza -F=auto --icons --color=always -la $argv
 	 else
-	  command ls --color=auto -Fa $argv
+	  command ls --color=auto -FhlA $argv
 	 end
 	end
 
@@ -98,7 +98,7 @@ function ll
 	 if command -q eza 
 	  command eza -F=auto --icons --color=always -l $argv
 	 else
-	  command ls --color=auto -Fl $argv
+	  command ls --color=auto -Fhl $argv
 	 end
 	end
 
@@ -106,7 +106,7 @@ function ll.
 	 if command -q eza 
 	  command eza -F=auto --icons --color=always -ld .* $argv
 	 else
-	  command ls --color=auto -Fld .* $argv
+	  command ls --color=auto -Fhld .* $argv
 	 end
 	end
 
