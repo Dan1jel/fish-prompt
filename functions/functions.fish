@@ -66,15 +66,15 @@ function l		# Replace 'ls' with 'eza' (if available) + some aliases.
 	 if command -q eza
 	  command eza -F=auto --icons --color=always $argv
 	 else
-	  command ls -F -G $argv
+	  command ls --color=auto -FG $argv
 	 end
 	end
 
 function ls
          if command -q eza
-	  command eza -F=auto -a --icons --color=always $argv
+	  command eza -F=auto --icons --color=always -a $argv
 	 else
-	  command ls -F -G $argv
+	  command ls --color=auto -FG $argv
 	 end
 	end
 
@@ -82,31 +82,31 @@ function l.
 	 if command -q eza 
 	  command eza -F=auto --icons --color=always -d .* $argv
 	 else
-	  command ls -F -d .* $argv
+	  command ls --color=auto -Fd .* $argv
 	 end
 	end
 
 function la 
 	 if command -q eza 
-	  command eza -F=auto -la --icons --color=always $argv
+	  command eza -F=auto --icons --color=always -la $argv
 	 else
-	  command ls -F -a $argv
+	  command ls --color=auto -Fa $argv
 	 end
 	end
 
 function ll
 	 if command -q eza 
-	  command eza -F=auto -l --icons --color=always $argv
+	  command eza -F=auto --icons --color=always -l $argv
 	 else
-	  command ls -Fhl $argv
+	  command ls --color=auto -Fl $argv
 	 end
 	end
 
 function ll.
 	 if command -q eza 
-	  command eza -F=auto -l -d .* $argv
+	  command eza -F=auto --icons --color=always -ld .* $argv
 	 else
-	  command ls -Fhl -d .* $argv
+	  command ls --color=auto -Fld .* $argv
 	 end
 	end
 
