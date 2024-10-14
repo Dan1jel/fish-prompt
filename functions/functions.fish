@@ -64,7 +64,7 @@ function find 		# Replace find with fdfind (fd on termux)
 
 function l		# Replace 'ls' with 'eza' (if available) + some aliases.
 	 if command -q eza
-	  command eza --icons --color=always $argv
+	  command eza -F=auto --icons --color=always $argv
 	 else
 	  command ls -G $argv
 	 end
@@ -72,7 +72,7 @@ function l		# Replace 'ls' with 'eza' (if available) + some aliases.
 
 function ls
          if command -q eza
-	  command eza -a --icons --color=always $argv
+	  command eza -F=auto -a --icons --color=always $argv
 	 else
 	  command ls -G $argv
 	 end
@@ -80,7 +80,7 @@ function ls
 
 function l. 
 	 if command -q eza 
-	  command eza --icons --color=always -d .* $argv
+	  command eza -F=auto --icons --color=always -d .* $argv
 	 else
 	  command ls -d .* $argv
 	 end
@@ -88,7 +88,7 @@ function l.
 
 function la 
 	 if command -q eza 
-	  command eza -la --icons --color=always $argv
+	  command eza -F=auto -la --icons --color=always $argv
 	 else
 	  command ls -a $argv
 	 end
@@ -96,7 +96,7 @@ function la
 
 function ll
 	 if command -q eza 
-	  command eza -F=never -hl --icons --color=always $argv
+	  command eza -F=auto -l --icons --color=always $argv
 	 else
 	  command ls -Fhl $argv
 	 end
@@ -104,7 +104,7 @@ function ll
 
 function ll.
 	 if command -q eza 
-	  command eza -Fhl -d .* $argv
+	  command eza -F=auto -l -d .* $argv
 	 else
 	  command ls -Fhl -d .* $argv
 	 end
