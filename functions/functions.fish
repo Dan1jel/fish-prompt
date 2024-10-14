@@ -110,7 +110,7 @@ function ll.
 	 end
 	end
 
-function topgrade-all
+function topgrade_all
 	 if test -e ~/.config/topgrade_all.toml
 	  command topgrade --config ~/.config/topgrade_all.toml	$argv
 	 else
