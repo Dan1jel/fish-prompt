@@ -110,6 +110,14 @@ function ll.
 	 end
 	end
 
+function topgrade-all
+	 if test -e ~/.config/topgrade_all.toml
+	  command topgrade --config ~/.config/topgrade_all.toml	$argv
+	 else
+	  command echo "ERROR: No config file found." && return 1 $argv
+	 end
+        end
+
 function tree
 	command eza --tree $argv
 	end
