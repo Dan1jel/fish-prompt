@@ -196,3 +196,6 @@
 
 	# Deny External Apps via Termux
 	    alias termux-external-apps-deny="~/./termux-backup/good_scripts/external-apps-deny.bash"
+
+	# Check if plex is currently running.
+	    alias isPlexIdle='curl -s http://192.168.87.23:32400/status/sessions -H "X-Plex-Token: cCBMPySihLJZ9wBv2sgx" | grep  -q "MediaContainer size=\"0\""'
