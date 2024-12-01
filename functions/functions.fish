@@ -64,51 +64,59 @@ function find 		# Replace find with fdfind (fd on termux)
 
 function l		# Replace 'ls' with 'eza' (if available) + some aliases.
 	 if command -q eza
-	  command eza --icons --color=always $argv
+	  command eza -F=auto --icons --color=always $argv
 	 else
-	  command ls -G $argv
+	  command ls --color=auto -FG $argv
 	 end
 	end
 
 function ls
          if command -q eza
-	  command eza -a --icons --color=always $argv
+	  command eza -F=auto --icons --color=always -a $argv
 	 else
-	  command ls -G $argv
+	  command ls --color=auto -FGA $argv
 	 end
 	end
 
 function l. 
 	 if command -q eza 
-	  command eza --icons --color=always -d .* $argv
+	  command eza -F=auto --icons --color=always -d .* $argv
 	 else
-	  command ls -d .* $argv
+	  command ls --color=auto -Fd .* $argv
 	 end
 	end
 
 function la 
 	 if command -q eza 
-	  command eza -la --icons --color=always $argv
+	  command eza -F=auto --icons --color=always -la $argv
 	 else
-	  command ls -a $argv
+	  command ls --color=auto -FhlA $argv
 	 end
 	end
 
 function ll
 	 if command -q eza 
-	  command eza -Fhl --icons --color=always $argv
+	  command eza -F=auto --icons --color=always -l $argv
 	 else
-	  command ls -Fhl $argv
+	  command ls --color=auto -Fhl $argv
 	 end
 	end
 
 function ll.
 	 if command -q eza 
-	  command eza -Fhl -d .* $argv
+	  command eza -F=auto --icons --color=always -ld .* $argv
 	 else
-	  command ls -Fhl -d .* $argv
+	  command ls --color=auto -Fhld .* $argv
 	 end
 	end
+
+function topgrade_all
+	 if test -e ~/.config/topgrade_all.toml
+	  command topgrade --config ~/.config/topgrade_all.toml	$argv
+	 else
+	  command echo "ERROR: No config file found." && return 1 $argv
+	 end
+        end
 
 function tree
 	command eza --tree $argv
@@ -116,31 +124,19 @@ function tree
 
 function transfer 		# copy transfer URL to clipboard
 	if command -q termux-clipboard-set
-	    	#command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete-url-token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | sed -z 's/\n$//' | termux-clipboard-set && cat curl_transfer.log
-		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep -i -E 'transfer\.sh|x-url-delete' > curl_transfer.log && tail -n1 curl_transfer.log | sed -z 's/\n$//' | termux-clipboard-set && cat curl_transfer.log
+		command curl -s bashupload.com -T $argv | awk "NR==6" | sed -z 's/\n$//' | termux-clipboard-set
 	else if command -q xclip
 	    command echo test | xclip -sel clip 2>/dev/null
 	    if test $status -eq 0
-		#command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete-url-token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | sed -z 's/\n$//' | xclip -sel clip 2>/dev/null; cat curl_transfer.log
- 	    	command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep -i -E 'transfer\.sh|x-url-delete' > curl_transfer.log && tail -n1 curl_transfer.log | sed -z 's/\n$//' | xclip -sel clip 2>/dev/null; cat curl_transfer.log
+ 	    	command curl -s bashupload.com -T $argv | awk "NR==6" | xclip -sel clip 2>/dev/null
 	    else
 		echo -e "\e[1;31m[x]\e[0m - Error copy to clipboard! - \e[1;31m[x]\e[0m" 
-		#command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete-url-token: "$6};END{print $0}' > curl_transfer.log && tail -n1 curl_transfer.log | xclip -sel clip 2>/dev/null; cat curl_transfer.log
-		command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep -i -E 'transfer\.sh|x-url-delete' > curl_transfer.log && tail -n1 curl_transfer.log | xclip -sel clip 2>/dev/null; cat curl_transfer.log
+		command curl -s bashupload.com -T $argv | awk "NR==6" | xclip -sel clip 2>/dev/null
 	    end
 	else
-	    	 #command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep 'transfer' | awk -F'/' 'NR==1{print "Delete-url-token: "$6};END{print $0}'
-		 command curl -sD - --upload-file $argv https://transfer.sh/$argv | grep -i -E 'transfer\.sh|x-url-delete'
+		command curl -s bashupload.com -T $argv | awk "NR==6"
 	end
 end
-
-function transfer-delete 	# delete uploaded transfer with URL
-	curl -X DELETE $argv
-end 
-
-function x-url-delete		# delete uploaded transfer with URL
-	curl -X DELETE $argv
-end 
 
 function timg
 	if command -q termux-info
