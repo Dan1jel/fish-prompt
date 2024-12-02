@@ -40,12 +40,4 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-<<<<<<< HEAD
 SETUVAR fish_user_paths:/home/pi/bin\x1e/home/pi/fzf/bin\x1e/home/pi/\x2efzf/bin\x1e/home/pi/\x2elocal/bin\x1e/home/pi/\x2ecargo/bin\x1e/home/pi/local/bin
-=======
-<<<<<<< HEAD
-SETUVAR fish_user_paths:/home/danijel/bin\x1e/home/danijel/fzf/bin\x1e/home/danijel/\x2efzf/bin\x1e/home/danijel/\x2elocal/bin\x1e/home/danijel/\x2ecargo/bin\x1e/home/danijel/local/bin
-=======
-SETUVAR fish_user_paths:/data/data/com\x2etermux/files/home/bin\x1e/data/data/com\x2etermux/files/home/fzf/bin\x1e/data/data/com\x2etermux/files/home/\x2efzf/bin\x1e/data/data/com\x2etermux/files/home/\x2elocal/bin\x1e/data/data/com\x2etermux/files/home/\x2ecargo/bin\x1e/data/data/com\x2etermux/files/home/local/bin
->>>>>>> bd33f4e54e5b2babf333290a70bb4779b3cc88fa
->>>>>>> a46642d874eb5ee28c07875a6ecd35c2bcca6b17
