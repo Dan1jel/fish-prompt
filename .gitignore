@@ -1,2 +1,2 @@
 functions/fzf_key_bindings.fish
-conf.d/fish-variables
+fish_variables
